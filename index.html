@@ -1,0 +1,21 @@
+
+
+<html>
+<head><title>Ejemplo de formulario sencillo</title></head>
+
+
+
+<body>
+ <form>
+ TEXTO <input type="text" id="formulario"/>
+ </form>
+ <script type="text/javascript" charset="utf-8">
+
+ var txt = document.getElementById("formulario");
+ txt.addEventListener('input',duplicate);
+ function duplicate(){
+     document.body.style.backgroundColor = this.value;
+   }
+ </script>
+</body>
+</html>
